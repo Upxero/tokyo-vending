@@ -1,0 +1,141 @@
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 150px;
+    color: #FFFFFF;
+}
+
+header {
+    background-image: linear-gradient(to right top, #145369, #063f59, #012c48, #021a36, #020024);
+    text-align: center;
+}
+
+header img {
+    width: 300px;
+}
+
+header a,
+header a:link,
+header a:visited {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-icons {
+    padding-right: 50px;
+}
+
+.nav-icons img {
+    width: 100px;
+}
+
+.nav-logout-btn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+.nav-logout-btn img {
+    width: 90px;
+    margin-top: 5px;
+}
+
+.nav-login-btn img {
+    width: 100px;
+}
+
+.cart-total-container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.cart-total {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: red;
+    font-size: 16px;
+    margin-top: 18px;
+    margin-right: 18px;
+}
+
+.wishlist-total-container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.wishlist-total {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: red;
+    font-size: 16px;
+    margin-top: 18px;
+    margin-right: 18px;
+}
+
+.category-pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+
+.category-buttons-container {
+    margin: 1rem 0;
+    display: flex;
+    gap: 200px;
+}
+
+.category-button {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    padding: 7px 5rem;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.category-button:hover {
+    background-color: #041014;
+    color: #FFFFFF;
+}
+
+.bg-color-category-button {
+    background-color: #041014;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 500px) {
+    .category-buttons-container{
+        gap: 20px;
+    }
+}
+
+

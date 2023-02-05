@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Tokyo Vending Machine App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+De applicatie is ontwikkeld om vending machines te voorzien van allerlei intelligente functies. Dit project laat ook zien hoe je met React een gebruiksvriendelijke gebruikerservaring op kunt bouwen, externe data kunt ophalen via een API en authenticatie kunt implementeren door gebruik te maken van een backend server waarin je nieuwe gebruikers kunt toevoegen en bestaande gebruikers kunt valideren.
 
-## Available Scripts
+## Functies
 
-In the project directory, you can run:
+- Lijst van producten
+- Productbeschrijving
+- Productcategorie
+- Favorieten toevoegen/verwijderen
+- Winkelwagen
+- Inloggen/registreren
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![My Image](src/assets/screenshot-home.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![My Image](src/assets/screenshot-product.png)
 
-### `npm test`
+![My Image](src/assets/screenshot-favo.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Applicatie starten
 
-### `npm run build`
+Voordat we het project starten hebben we een database nodig voor het registreren en inloggen.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone eerst de [nep database server](https://github.com/hogeschoolnovi/frontend-fake-server) naar jouw lokale machine. Voor je de server kunt gebruiken zul je de dependencies moeten installeren met het commando:
+```bash
+  npm install 
+```
+Om de server te starten hoef je slechts het volgende commando in jouw terminal in te voeren:
+```bash
+  npm run json:server
+```
+Deze server draait op http://localhost:3000, wanneer je dit in de browser opent zul je alle beschikbare endpoints zien verschijnen. Let op: omdat deze server op localhost:3000 draait is het belangrijk deze server te starten vóór je het React-project start.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone nu het project naar jouw locale machine en installeer eerst de node_modules door het volgende commando in de terminal te runnen:
+```bash
+  npm install 
+```
+Wanneer dit klaar is, kun je de applicatie starten met behulp van:
+```bash
+  npm start
+```
+Of gebruik de WebStorm knop (npm start). React zal nu automatisch vragen om het project op een andere poort te draaien. Open http://localhost:3001 om de pagina in de browser te bekijken.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Registreren en inloggen
+Om favorieten te kunnen toevoegen en bestellingen te kunnen plaatsen is het noodzakelijk om eerst te registreren en daarna in te loggen. Dit kun je doen door naar de registratie-pagina te gaan door  op het user-icoon te klikken. Klik op registreren en vul je gebruikersnaam, emailadres en wachtwoord in. Als je ingelogd bent heb je toegang tot je profielpagina en kun je favorieten toevoegen en de bestellingen plaatsen in de winkelwagen.  
 
-### `npm run eject`
+## Schermontwerp
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ga naar mijn [Figma project](https://www.figma.com/file/QEuYNoFuw7LG67Jc0o6D9H/%F0%9F%97%BC-Tokyo-Vending?node-id=18%3A8&t=hdoM5KmHz54PmMEO-1) om de schermontwerpen te zien.

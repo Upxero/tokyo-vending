@@ -1,0 +1,41 @@
+.error-page-container {
+    min-height: 350px;
+}
+
+.error-page-title {
+    padding-top: 1rem;
+    color: #041014;
+    text-align: center;
+}
+
+.error-msg {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 1rem 3rem;
+    width: fit-content;
+}
+
+.error-msg-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.error-msg-btn {
+    border: none;
+    background-color: #041014;
+    color: #FFFFFF;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    .error-page {
+        flex-wrap: wrap;
+    }
+}

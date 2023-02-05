@@ -1,0 +1,62 @@
+.landing-page-home {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #d1bead;
+    flex-wrap: wrap;
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-80%, -50%);
+    text-align: center;
+    width: 30%;
+}
+
+.video-title {
+    color: #14281d;
+    font-size: 4rem;
+    filter: drop-shadow(1px 1px 2px #145369);
+}
+
+.video-sub-title {
+    color: #041014;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.cta-button {
+    padding: 1rem 3rem;
+    background-color: #041014;
+    color: #FFFFFF;
+    border: 2px solid #041014;
+    font-size: 1.7rem;
+    font-weight: 100;
+    transition: 0.3s ease-in-out;
+    cursor:pointer;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    border: 2px solid #041014;
+    color: #041014;
+}
+
+.landing-video {
+    width: 50%;
+    height: 75vh;
+    object-fit: cover;
+    aspect-ratio: 1/3;
+}
+
+
+
+

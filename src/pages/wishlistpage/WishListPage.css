@@ -1,0 +1,50 @@
+.wishlist-page-title {
+    padding-top: 1rem;
+    color: #041014;
+    text-align: center;
+}
+
+.wishlist-page {
+    justify-content: center;
+    gap: 2rem;
+    min-height: 150px;
+}
+
+.wishlist-card {
+    position: relative;
+    height: 25rem;
+    width: 17rem;
+}
+
+.wishlist-text {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.wishlist-text-title,
+.wishlist-text-description {
+    text-align: center;
+    padding: 1rem;
+}
+
+.wishlist-text-title {
+    font-weight: 700;
+}
+
+.wishlist-browse-btn {
+    background-color: #041014;
+    color: #FFFFFF;
+    font-size: 1rem;
+    border: none;
+    padding: 1rem 2rem;
+    cursor:pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .wishlist-page {
+        flex-wrap: wrap;
+    }
+}
