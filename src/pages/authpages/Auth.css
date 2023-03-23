@@ -48,14 +48,13 @@
 }
 
 .register-text {
-    margin-top: 3rem;
     letter-spacing: 0.5px;
 }
 
-.login-guest {
-    cursor: pointer;
-    font-size: 1.2rem;
-    border-bottom: 1px solid #041014;
+.register-link {
+    text-decoration: none;
+    color: #041014;
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 900px) {

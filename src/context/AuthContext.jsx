@@ -49,7 +49,7 @@ function AuthContextProvider({ children }) {
 
     async function fetchUserData(id, token, redirectUrl) {
         try {
-            const result = await axios.get(`http://localhost:3000/600/users/${id}`, {
+            const result = await axios.get(`https://frontend-educational-backend.herokuapp.com/api/user`, {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${token}`,

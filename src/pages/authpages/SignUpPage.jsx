@@ -25,7 +25,7 @@ const SignUpPage = () => {
         toggleLoading(true);
 
         try {
-            await axios.post('http://localhost:3000/register', {
+            await axios.post('https://frontend-educational-backend.herokuapp.com/api/auth/signup', {
                 email: email,
                 password: password,
                 username: username,
@@ -82,7 +82,7 @@ const SignUpPage = () => {
                         Sign Up
                     </button>
                     <p className="register-text">
-                        Already a user? <Link to="/login">LOGIN</Link>
+                        Already a user? <Link className="register-link" to="/login">LOGIN</Link>
                     </p>
                 </form>
             </div>

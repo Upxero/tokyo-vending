@@ -5,7 +5,7 @@ import axios from 'axios';
 import './Auth.css';
 
 const LoginPage = () => {
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, toggleError] = useState(false);
     const [loading, toggleLoading] = useState(false);
@@ -25,8 +25,8 @@ const LoginPage = () => {
         toggleLoading(true);
 
         try {
-            const result = await axios.post('http://localhost:3000/login', {
-                email: email,
+            const result = await axios.post('https://frontend-educational-backend.herokuapp.com/api/auth/signin', {
+                username: username,
                 password: password,
             }, {
                 cancelToken: source.token,
@@ -55,12 +55,12 @@ const LoginPage = () => {
                     <h2 className="margin-top-bottom-zero center-text">LOG IN</h2>
                     <div className="form-inputs">
                         <input
-                            type="email"
-                            name="email"
-                            placeholder="E-mail"
+                            type="username"
+                            name="username"
+                            placeholder="Username"
                             className="form-input"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
                             required
                         />
                         <input
@@ -81,7 +81,7 @@ const LoginPage = () => {
                         Login
                     </button>
                     <p className="register-text">
-                        Don't have an account? <Link to="/sign-up">REGISTER</Link>
+                        Don't have an account? <Link className="register-link" to="/sign-up">REGISTER</Link>
                     </p>
                 </form>
             </div>
